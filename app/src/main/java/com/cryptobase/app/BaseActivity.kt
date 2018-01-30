@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper
 
 
-class BaseActivity : AppCompatActivity() {
+open class BaseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
