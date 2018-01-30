@@ -7,5 +7,4 @@ import com.github.salomonbrys.kodein.KodeinAware
 class CryptobaseApplication: Application(), KodeinAware {
 
     override val kodein by Injection().graph
-
 }
