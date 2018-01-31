@@ -1,28 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipChildren="false"
+    android:clipToPadding="false"
     android:padding="8dp">
 
     <com.cryptobase.widgets.CoinMarketItem
         android:id="@+id/coinMarket"
         android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:layout_height="50dp" />
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/coinMarket"
-        app:cardElevation="2dp"
+        android:layout_marginTop="24dp"
+        android:padding="6dp"
         app:cardCornerRadius="4dp"
-        android:layout_marginTop="24dp">
+        app:cardElevation="2dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+
+            <com.cryptobase.widgets.CoinMarkeDetailtItem
+                android:id="@+id/coinMarketCap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/amber_50" />
+
+            <com.cryptobase.widgets.CoinMarkeDetailtItem
+                android:id="@+id/coinMarketVol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.cryptobase.widgets.CoinMarkeDetailtItem
+                android:id="@+id/coinMarketCirculating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/amber_50" />
+
+            <com.cryptobase.widgets.CoinMarkeDetailtItem
+                android:id="@+id/coinMarketTotalSupply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.cryptobase.widgets.CoinMarkeDetailtItem
+                android:id="@+id/coinMarketMaxSupply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/amber_50" />
+
+            <com.cryptobase.widgets.CoinMarkeDetailtItem
+                android:id="@+id/coinMarketChange1h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.cryptobase.widgets.CoinMarkeDetailtItem
+                android:id="@+id/coinMarketChange24h"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/amber_50" />
+
+            <com.cryptobase.widgets.CoinMarkeDetailtItem
+                android:id="@+id/coinMarketChange7d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
 
     </android.support.v7.widget.CardView>
 </RelativeLayout>
