@@ -10,8 +10,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginRight="8dp"
-        android:src="@color/colorAccent" />
+        android:layout_marginRight="8dp" />
 
     <LinearLayout
         android:id="@+id/top"
@@ -29,10 +28,10 @@
             android:layout_weight="0.45"
             android:ellipsize="end"
             android:maxLines="1"
-            android:text="Bitcoidsadasdasdasdasdasdasn"
             android:textColor="@android:color/black"
             android:textSize="@dimen/text_normal"
-            tools:ignore="MissingPrefix" />
+            tools:ignore="MissingPrefix"
+            tools:text="Bitcoin" />
 
         <TextView
             android:id="@+id/coinUSD"
@@ -42,10 +41,10 @@
             android:layout_marginRight="8dp"
             android:layout_weight="0.35"
             android:maxLines="1"
-            android:text="$10,244,5454564"
             android:textColor="@android:color/black"
             android:textSize="@dimen/text_normal"
-            tools:ignore="MissingPrefix" />
+            tools:ignore="MissingPrefix"
+            tools:text="$10,244" />
 
         <TextView
             android:id="@+id/coinValorization"
@@ -54,8 +53,8 @@
             android:layout_weight="0.20"
             android:gravity="left"
             android:maxLines="1"
-            android:text="(10,023%)"
-            android:textSize="@dimen/text_normal" />
+            android:textSize="@dimen/text_normal"
+            tools:text="(10,023%)" />
 
     </LinearLayout>
 
@@ -73,16 +72,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.45"
-            android:text="BTC"
             android:textAllCaps="true"
-            android:textSize="@dimen/text_normal" />
+            android:textSize="@dimen/text_normal"
+            tools:text="BTC" />
 
         <TextView
             android:id="@+id/coinBtcValue"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.55"
-            android:text="0.0000052"
-            android:textSize="@dimen/text_normal" />
+            android:textSize="@dimen/text_normal"
+            tools:text="0.0000052" />
     </LinearLayout>
 </RelativeLayout>
