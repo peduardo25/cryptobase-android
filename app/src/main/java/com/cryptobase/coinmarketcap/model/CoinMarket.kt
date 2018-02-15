@@ -10,9 +10,9 @@ class CoinMarket : Serializable {
     val symbol: String = ""
     val rank: String = ""
     @SerializedName("price_usd")
-    val princeUsd : String = ""
+    val princeUsd : Double = 0.0
     @SerializedName("price_btc")
-    val princeBtc : String = ""
+    val princeBtc : Double = 0.0
 
     @SerializedName("24h_volume_usd")
     val volume24h : String = ""
