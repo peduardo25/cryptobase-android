@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="font_lato_regular">fonts/Lato-Regular.ttf</string>
+    <string name="font_lato_bold">fonts/Lato-Bold.ttf</string>
+    <string name="font_lato_italic">fonts/Lato-Italic.ttf</string>
+    <string name="font_lato_bold_italic">fonts/Lato-BoldItalic.ttf</string>
+    <string name="font_lato_black">fonts/Lato-Black.ttf</string>
+</resources>
